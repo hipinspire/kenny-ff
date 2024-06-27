@@ -1,0 +1,334 @@
+/* Fonts */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Bold.eot');
+  src: url('../fonts/SpaceGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Bold.woff') format('woff'),
+      url('../fonts/SpaceGrotesk-Bold.ttf') format('truetype'),
+      url('../fonts/SpaceGrotesk-Bold.svg#SpaceGrotesk-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Medium.eot');
+  src: url('../fonts/SpaceGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Medium.woff') format('woff'),
+      url('../fonts/SpaceGrotesk-Medium.ttf') format('truetype'),
+      url('../fonts/SpaceGrotesk-Medium.svg#SpaceGrotesk-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../fonts/SpaceGrotesk-Regular.eot');
+  src: url('../fonts/SpaceGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+      url('../fonts/SpaceGrotesk-Regular.woff') format('woff'),
+      url('../fonts/SpaceGrotesk-Regular.ttf') format('truetype'),
+      url('../fonts/SpaceGrotesk-Regular.svg#SpaceGrotesk-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Suez One';
+  src: url('../fonts/SuezOne-Regular.eot');
+  src: url('../fonts/SuezOne-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SuezOne-Regular.woff2') format('woff2'),
+      url('../fonts/SuezOne-Regular.woff') format('woff'),
+      url('../fonts/SuezOne-Regular.ttf') format('truetype'),
+      url('../fonts/SuezOne-Regular.svg#SuezOne-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Suez One';
+  font-weight: 400;
+  line-height: 1.5;
+  color: #36343C;
+  position: relative;
+}
+h1 {
+  -webkit-text-stroke: 2px #1B1A1E;
+}
+.btn {
+  font-weight: 700;
+}
+/* Hero */
+.hero .presale-timer-container::before {
+  position: absolute;
+  content: "";
+  background-image: url('../public/assets/icons/pngwing-6.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 127px;
+  height: 161px;
+  bottom: 40px;
+  left: -20%; /* Start off-screen to the left */
+  opacity: 0; /* Start with opacity 0 */
+  transition: left 1s ease, opacity 1s ease; /* Apply transitions */
+}
+
+.hero .presale-timer-container.animate::before {
+  animation: slide-in 1s ease forwards; /* Apply animation on page load */
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%; /* Start off-screen to the left */
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-10px); /* Slightly up */
+  }
+  20% {
+    transform: translateY(0); /* Slightly down */
+  }
+  30% {
+    transform: translateY(10px); /* Slightly down */
+  }
+  40% {
+    transform: translateY(0); /* Slightly down */
+  }
+  50% {
+    transform: translateY(-10px); /* Slightly down */
+  }
+  60% {
+    transform: translateY(0); /* Slightly down */
+  }
+  70% {
+    transform: translateY(10px); /* Slightly down */
+  }
+  80% {
+    transform: translateY(0); /* Slightly down */
+  }
+  90% {
+    transform: translateY(-10px); /* Slightly down */
+  }
+  100% {
+    left: 0; /* Move to the base position */
+    opacity: 1; /* Increase opacity to 1 */
+    transform: translateY(0); /* Back to original position */
+  }
+}
+
+.shine-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 70%);
+  opacity: 0;
+  animation: shine 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.7) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) rotate(360deg);
+  }
+}
+
+/* MediaPartners */
+.mediaPartners .swiper {
+  padding: 30px 0 90px;
+}
+.mediaPartners .swiper-wrapper {
+  align-items: center;
+}
+.mediaPartners .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 61px;
+}
+.MediaPartnersSwiperMobile .swiper-slide {
+  display: grid !important;
+  align-items: center;
+  justify-content: center;
+}
+.MediaPartnersSwiperMobile .swiper-slide .logo-container {
+  position: relative;
+  min-height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MediaPartnersSwiperMobile .swiper-slide .logo-container:last-child {
+  margin-top: 30px;
+}
+.MediaPartnersSwiperMobile .swiper-slide .logo-container::after,
+.mediaPartners .desktop_tablet-swiper .swiper-slide:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255,255,255,0.12);
+  width: 1px;
+  height: 37px;
+  top: 13px;
+  right: 0;
+}
+.MediaPartnersSwiperMobile .swiper-slide .logo-container::after {
+  right: -25px;
+}
+.roadMapSection .swiper-button-nextFour::after,
+.roadMapSection .swiper-button-prevFour::after,
+.presaleSection .swiper-button-nextThree::after,
+.presaleSection .swiper-button-prevThree::after,
+.upcomingSection .swiper-button-nextTwo::after,
+.upcomingSection .swiper-button-prevTwo::after,
+.mediaPartners .swiper-button-next::after,
+.mediaPartners .swiper-button-prev::after {
+  content: "";
+}
+.roadMapSection .swiper-button-nextFour:hover,
+.roadMapSection .swiper-button-nextFour:active,
+.roadMapSection .swiper-button-nextFour:focus,
+.roadMapSection .swiper-button-prevFour:hover,
+.roadMapSection .swiper-button-prevFour:active,
+.roadMapSection .swiper-button-prevFour:focus,
+.upcomingSection .swiper-button-prevTwo:hover,
+.upcomingSection .swiper-button-prevTwo:active,
+.upcomingSection .swiper-button-prevTwo:focus,
+.mediaPartners .swiper-button-prev:hover,
+.mediaPartners .swiper-button-prev:active,
+.mediaPartners .swiper-button-prev:focus,
+.upcomingSection .swiper-button-nextTwo:hover,
+.upcomingSection .swiper-button-nextTwo:active,
+.upcomingSection .swiper-button-nextTwo:focus,
+.mediaPartners .swiper-button-next:hover,
+.mediaPartners .swiper-button-next:active,
+.mediaPartners .swiper-button-next:focus {
+  box-shadow: 4px 4px 20px #C5D2EF;
+  cursor: pointer;
+}
+.mediaPartners .swiper-button-prev {
+  left: 46% !important;
+}
+.mediaPartners .swiper-button-next {
+  right: 46% !important;
+}
+.upcomingSection .swiper-button-prevTwo,
+.MediaPartnersSwiperMobile .swiper-button-prev {
+  left: 37% !important;
+}
+.MediaPartnersSwiperMobile .swiper-button-next {
+  right: 34% !important;
+}
+/* upcomingSection */
+.upcomingSectionSwiper-container .swiper {
+  padding: 0 0 100px;
+}
+.upcomingSection .swiper-button-nextTwo {
+  right: -54%;
+  bottom: 44px;
+}
+/* presaleSection */
+.roadMapSection .swiper-button-prevFour,
+.presaleSection .swiper-button-prevThree {
+  left: auto;
+  right: 20px;
+}
+.presaleSection .swiper-button-nextThree {
+  right: 0;
+}
+.upcomingSection .swiper-button-prevTwo:hover,
+.upcomingSection .swiper-button-prevTwo:active,
+.upcomingSection .swiper-button-prevTwo:focus,
+.upcomingSection .swiper-button-nextTwo:hover,
+.upcomingSection .swiper-button-nextTwo:active,
+.upcomingSection .swiper-button-nextTwo:focus,
+.presaleSection .swiper-button-nextThree:hover,
+.presaleSection .swiper-button-nextThree:active,
+.presaleSection .swiper-button-nextThree:focus,
+.presaleSection .swiper-button-prevThree:hover,
+.presaleSection .swiper-button-prevThree:active,
+.presaleSection .swiper-button-prevThree:focus {
+  box-shadow: 4px 4px 20px #AFB7C5;
+  cursor: pointer;
+}
+/* roadMapSection */
+.roadMapSection .swiper {
+  overflow: visible;
+}
+/* footer */
+.phone-num > div {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.phone-num:hover > div,
+.phone-num:focus > div {
+  transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 639px) {
+  .upcomingSection .swiper-slide {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .hero .presale-timer-container::before {
+    width: 95px;
+    height: 115px;
+  }
+  .upcomingSection .swiper-button-prevTwo,
+  .mediaPartners .swiper-button-prev {
+    left: 33% !important;
+  }
+  .mediaPartners .swiper-button-next {
+    right: 34% !important;
+  }
+  .upcomingSection .swiper-button-nextTwo {
+    right: -50%;
+  }
+}
