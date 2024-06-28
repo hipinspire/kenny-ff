@@ -88,6 +88,42 @@ h1 {
 .btn {
   font-weight: 700;
 }
+/* Navbar */
+.icon-transition-appear {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 3s ease, transform 3s ease;
+  position: absolute;
+}
+.icon-transition-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+.icon-transition-enter {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 3s ease, transform 3s ease;
+  position: absolute;
+}
+.icon-transition-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+.icon-transition-exit {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+.icon-transition-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  position: absolute;
+}
 /* Hero */
 .hero .presale-timer-container::before {
   position: absolute;
@@ -265,13 +301,15 @@ h1 {
   bottom: 44px;
 }
 /* presaleSection */
-.roadMapSection .swiper-button-prevFour,
-.presaleSection .swiper-button-prevThree {
+.roadMapSection .swiper-button-prevFour {
   left: auto;
   right: 20px;
 }
+.presaleSection .swiper-button-prevThree {
+  left: -10px;
+}
 .presaleSection .swiper-button-nextThree {
-  right: 0;
+  right: -10px;
 }
 .upcomingSection .swiper-button-prevTwo:hover,
 .upcomingSection .swiper-button-prevTwo:active,
@@ -307,7 +345,27 @@ h1 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
+/* Scroll To Top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.scroll-to-top .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.scroll-to-top .arrow-icon {
+  color: #fff;
+  font-size: 20px;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 639px) {
@@ -330,5 +388,11 @@ h1 {
   }
   .upcomingSection .swiper-button-nextTwo {
     right: -50%;
+  }
+  .presaleSection .swiper-button-prevThree {
+    left: -3%;
+  }
+  .presaleSection .swiper-button-nextThree {
+    right: -3%;
   }
 }

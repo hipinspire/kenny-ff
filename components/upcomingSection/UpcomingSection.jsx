@@ -25,7 +25,7 @@ import 'swiper/css/navigation'
 
 const imageVariantsCoolCowUp = {
   initial: {
-    y: 550,
+    y: 350,
     x: -24,
     opacity: 0
   },
@@ -36,25 +36,25 @@ const imageVariantsCoolCowUp = {
     transition: {
       type: "spring",
       bounce: 0.3,
-      duration: 1
+      duration: 1.5
     }
   }
 };
 
 const imageVariantsCoolCowUpMob = {
   initial: {
-    y: 750,
+    y: 400,
     x: -10,
     opacity: 0
   },
   animate: {
-    y: 580,
+    y: 545,
     x: 0,
     opacity: 1,
     transition: {
       type: "spring",
       bounce: 0.3,
-      duration: 1
+      duration: 1.5
     }
   }
 };
@@ -67,7 +67,7 @@ const UpcomingSection = () => {
   return (
     <section 
       id="upcomingSection" 
-      className='upcomingSection relative my-4 rounded-[39px] md:rounded-[59px] bg-[#34313A] pt-[40px] lg:pt-[80px] lg:pb-0'
+      className='upcomingSection relative m-[12px] md:mx-0 rounded-[39px] md:rounded-[59px] bg-[#34313A] pt-[25px] lg:pt-[80px] lg:pb-0'
       ref={ref}
     >
       {/* BG Pattern, CoolCow Image */}

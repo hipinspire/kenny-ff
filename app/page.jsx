@@ -1,3 +1,5 @@
+'use client'
+
 import Hero from "@components/hero/Hero";
 import MediaPartners from "@components/mediaPartners/MediaPartners";
 import AboutUsSection from "@components/aboutUsSection/AboutUsSection";
@@ -6,6 +8,7 @@ import UpcomingSection from "@components/upcomingSection/UpcomingSection";
 import PresaleSection from "@components/presaleSection/PresaleSection";
 import RoadMapSection from "@components/roadMapSection/RoadMapSection";
 import HowToBuySection from "@components/howToBuySection/HowToBuySection";
+import ScrollToTop from "@components/scrollToTop/ScrollToTop";
 
 export default function Home() {
 
@@ -19,6 +22,7 @@ export default function Home() {
       <PresaleSection />
       <RoadMapSection />
       <HowToBuySection />
+      <ScrollToTop />
     </>
   );
 }

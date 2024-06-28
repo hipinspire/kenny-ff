@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { CSSTransition } from 'react-transition-group';
 
 import BigCow from '@/public/assets/images/big-cow.webp'
 import Link from 'next/link'
@@ -56,16 +57,43 @@ const Navbar = () => {
           </ul>
 
            {/* Mobile Navigation Icon */}
-           <div onClick={handleNav} className={`toggle-btn block lg:hidden z-50 cursor-pointer ${nav ? 'fixed right-[30px]' : 'relative right-auto'}`}>
+           <div 
+              onClick={handleNav} 
+              className={`toggle-btn block lg:hidden z-50 cursor-pointer transition-all ${nav ? 'fixed right-[30px]' : 'relative right-auto'}`}
+            >
+              <CSSTransition
+                in={nav}
+                timeout={2000}
+                classNames="icon-transition"
+                unmountOnExit
+                appear
+              >
+                <AiOutlineClose size={20} />
+              </CSSTransition>
+              <CSSTransition
+                in={!nav}
+                timeout={2000}
+                classNames="icon-transition"
+                unmountOnExit
+                appear
+              >
+                <AiOutlineMenu size={20} />
+              </CSSTransition>
+            </div>
+
+           {/* <div 
+            onClick={handleNav} 
+            className={`toggle-btn block lg:hidden z-50 cursor-pointer transition-all delay-[2000ms] ${nav ? 'fixed right-[30px]' : 'relative right-auto'}`}
+          >
             {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-          </div>
+          </div> */}
 
           {/* Mobile Navigation Menu */}
           <ul 
             className={
               nav
-                ? 'fixed lg:hidden left-0 top-0 w-[100%] h-full border-r border-r-gray-900 bg-[#36343C] ease-in-out duration-500 px-10 py-8 z-40'
-                : 'ease-in-out w-[100%] duration-500 fixed top-0 bottom-0 left-[-100%]'
+                ? 'fixed lg:hidden left-0 top-0 w-[100%] h-full border-r border-r-gray-900 bg-[#36343C] ease-in-out duration-300 px-10 py-8 z-40'
+                : 'ease-in-out w-[100%] duration-300 fixed top-0 bottom-0 left-[-100%]'
             }>
               {/* BG Images - Stripes */}
               <div className="bg-images-container absolute top-0 left-0 w-full h-full">

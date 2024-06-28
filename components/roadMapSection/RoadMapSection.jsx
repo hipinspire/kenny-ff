@@ -72,7 +72,7 @@ const RoadMapSection = () => {
             <Image 
               src={Icon}
               alt=''
-              className='relative max-w-[34px] top-[-21px] left-[70px] md:max-w-full md:top-[-52px] md:left-[170px]'
+              className='relative max-w-[50px] top-[-31px] left-[70px] md:max-w-full md:top-[-52px] md:left-[170px]'
             />
           </motion.div>
         </div>

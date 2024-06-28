@@ -13,9 +13,9 @@ import 'swiper/css/navigation'
 
 const PresaleSection = () => {
   return (
-    <section id='presaleSection' className='presaleSection relative my-4 rounded-[39px] md:rounded-[59px] bg-[#E7DBED] pt-[50px] pb-[36px] lg:pb-[50px]'>
+    <section id='presaleSection' className='presaleSection relative m-[12px] md:mx-0 rounded-[39px] md:rounded-[59px] bg-[#E7DBED] pt-[25px] pb-[50px] lg:pb-[50px]'>
       <div className="container max-w-[1290px] px-4 lg:px-0 mx-auto relative">
-        <div className='flex flex-row flex-wrap items-center justify-between mb-24 md:mb-8'>
+        <div className='flex flex-row flex-wrap items-center justify-between mb-8'>
           <div className='basis-full md:basis-2/3'>
             <div className='title-container'>
               <h2 className='text-[#36343C] text-[32px] lg:text-[48px] uppercase'>Presale schedule</h2>
@@ -23,20 +23,7 @@ const PresaleSection = () => {
             </div>
           </div>
           <div className='basis-full md:basis-1/3'>
-            <div className="presaleSectionSwiper-arrows flex flex-row flex-nowrap items-center justify-end relative top-[50px] md:top-[27px]">
-              <div className="swiper-button-prevThree relative flex flex-row items-center justify-center bg-white rounded-[15px] w-[44px] h-[44px] min-w-[44px] min-h-[44px]">
-                <Image 
-                  src={ChevronLeft}
-                  alt=''
-                />
-              </div>
-              <div className="swiper-button-nextThree relative flex flex-row items-center justify-center bg-white rounded-[15px] w-[44px] h-[44px] min-w-[44px] min-h-[44px]">
-                <Image 
-                  src={ChevronRight}
-                  alt=''
-                />
-              </div>
-            </div>
+           
           </div>
         </div>
         
@@ -159,6 +146,21 @@ const PresaleSection = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+
+        <div className="presaleSectionSwiper-arrows flex flex-row flex-nowrap items-center justify-center relative top-[25px] md:top-[27px]">
+          <div className="swiper-button-prevThree relative flex flex-row items-center justify-center bg-white rounded-[15px] w-[44px] h-[44px] min-w-[44px] min-h-[44px]">
+            <Image 
+              src={ChevronLeft}
+              alt=''
+            />
+          </div>
+          <div className="swiper-button-nextThree relative flex flex-row items-center justify-center bg-white rounded-[15px] w-[44px] h-[44px] min-w-[44px] min-h-[44px]">
+            <Image 
+              src={ChevronRight}
+              alt=''
+            />
+          </div>
         </div>
       </div>
     </section>

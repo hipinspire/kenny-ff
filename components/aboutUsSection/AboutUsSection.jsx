@@ -160,7 +160,7 @@ const AboutUsSection = () => {
                 <Image 
                   src={BigCoinOnWingsImg}
                   alt=''
-                  className='relative z-[1] max-w-[50%] xl:max-w-full m-auto'
+                  className='relative z-[1] sm:max-w-[70%] xl:max-w-full m-auto'
                 />
               </motion.div>
               {/* Cool Cow */}

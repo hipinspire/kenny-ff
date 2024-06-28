@@ -182,7 +182,7 @@ const TokenomicsSection = () => {
     >
       <div className="container max-w-[1150px] lg:px-0 mx-auto relative">
         <div className="flex flex-row flex-wrap items-center justify-center">
-          <div className="basis-full xl:basis-1/2 order-last mt-[30px] xl:mt-0 xl:order-first relative">
+          <div className="basis-full xl:basis-1/2 order-last mt-[12px] xl:mt-0 xl:order-first relative">
             <div className='img-container flex items-center justify-center xl:absolute rounded-[39px] md:rounded-[59px] bg-[#919CAF] width-[100%] xl:w-[718px] h-[464px] xl:h-[657px] xl:top-[-295px] xl:left-[-130px]'>
               {/* Big Coin */}
               <motion.div 
@@ -248,7 +248,7 @@ const TokenomicsSection = () => {
               {/* Image Texts */}
               <div className='imgTexts-container'>
                 <motion.div 
-                  className='imgTextOne-container absolute w-[137px] h-auto sm:w-[260px] top-[125px] left-[0px] xl:top-[70px] xl:left-[100px]'
+                  className='imgTextOne-container absolute w-[180px] h-auto sm:w-[260px] top-[105px] left-[0px] xl:top-[70px] xl:left-[100px]'
                   variants={imageVariantsTextOne}
                   initial="initial"
                   whileInView="animate"
@@ -261,7 +261,7 @@ const TokenomicsSection = () => {
                   />
                 </motion.div>
                 <motion.div 
-                  className='imgTextOne-container absolute w-[137px] h-auto sm:w-[260px] bottom-[110px] left-[0px] xl:bottom-[90px] xl:left-[80px]'
+                  className='imgTextOne-container absolute w-[180px] h-auto sm:w-[260px] bottom-[90px] left-[0px] xl:bottom-[90px] xl:left-[80px]'
                   variants={imageVariantsTextTwo}
                   initial="initial"
                   whileInView="animate"
@@ -274,7 +274,7 @@ const TokenomicsSection = () => {
                   />
                 </motion.div>
                 <motion.div 
-                  className='imgTextOne-container absolute w-[137px] h-auto sm:w-[260px] bottom-[110px] right-[30px] xl:bottom-[90px] xl:right-[80px]'
+                  className='imgTextOne-container absolute w-[190px] h-auto sm:w-[260px] bottom-[75px] right-[30px] xl:bottom-[90px] xl:right-[80px]'
                   variants={imageVariantsTextThree}
                   initial="initial"
                   whileInView="animate"
@@ -287,7 +287,7 @@ const TokenomicsSection = () => {
                   />
                 </motion.div>
                 <motion.div 
-                  className='imgTextOne-container absolute w-[137px] h-auto sm:w-[260px] bottom-[160px] right-[21px] xl:bottom-[210px] xl:right-[18px]'
+                  className='imgTextOne-container absolute w-[190px] h-auto sm:w-[260px] bottom-[143px] right-[21px] xl:bottom-[210px] xl:right-[18px]'
                   variants={imageVariantsTextFour}
                   initial="initial"
                   whileInView="animate"
@@ -300,7 +300,7 @@ const TokenomicsSection = () => {
                   />
                 </motion.div>
                 <motion.div 
-                  className='imgTextOne-container absolute w-[137px] h-auto sm:w-[260px] top-[108px] right-[30px] xl:top-[70px] xl:right-[18px]'
+                  className='imgTextOne-container absolute w-[190px] h-auto sm:w-[260px] top-[87px] right-[10px] xl:top-[70px] xl:right-[18px]'
                   variants={imageVariantsTextFive}
                   initial="initial"
                   whileInView="animate"
