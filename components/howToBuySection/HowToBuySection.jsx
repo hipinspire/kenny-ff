@@ -10,7 +10,7 @@ import CoolCowThree from '@/public/assets/images/Kennylais_ILLUST_6.webp'
 
 const HowToBuySection = () => {
   return (
-    <section id="howToBuySection" className='howToBuySection relative my-4 rounded-[39px] md:rounded-[59px] bg-[#34313A] pt-[35px] pb-[45px] md:pt-[70px] md:pb-[110px]'>
+    <section id="howToBuySection" className='howToBuySection relative m-[12px] md:mx-0 rounded-[39px] md:rounded-[59px] bg-[#34313A] pt-[35px] pb-[45px] md:pt-[70px] md:pb-[110px]'>
       {/* BG Pattern, CoolCow Image */}
       <div className='bg-pattern'>
         <Image 

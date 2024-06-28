@@ -53,7 +53,7 @@ const RoadMapSection = () => {
   return (
     <motion.section 
       id="roadMap" 
-      className='roadMapSection relative my-4 rounded-[39px] md:rounded-[59px] bg-[#49404F] pt-[35px] pb-[65px] md:pt-[70px] md:pb-[110px]'
+      className='roadMapSection relative m-[12px] md:mx-0 rounded-[39px] md:rounded-[59px] bg-[#49404F] pt-[35px] pb-[65px] md:pt-[70px] md:pb-[110px]'
       ref={ref}
     >
       <div className="container max-w-[1150px] px-4 lg:px-0 mx-auto relative">
