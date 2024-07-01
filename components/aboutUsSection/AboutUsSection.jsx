@@ -133,9 +133,9 @@ const AboutUsSection = () => {
               <li className='mr-4'>
                 <a className='btn inline-block text-[16px] xl:text-[18px] rounded-[30px] text-[#E7DBED] bg-[#36343C] hover:bg-[#AD89B1] transition-all pt-[18px] px-[30px] pb-[19px] xl:pt-[16px] xl:px-[46px] xl:pb-[18px] min-w-[160px] xl:min-w-[193px]' href="#">How To Buy</a>
               </li>
-              <li>
+              {/* <li>
                 <a className='btn inline-block text-[16px] xl:text-[18px] rounded-[30px] text-[#36343C] hover:text-[#ffffff] bg-[#E7DBED] hover:bg-[#AD89B1] transition-all pt-[18px] px-[50px] pb-[19px] xl:pt-[16px] xl:px-[62px] xl:pb-[18px] min-w-[160px] xl:min-w-[193px]' href="#">Staking</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="basis-full xl:basis-[49%] mt-12 xl:mt-0 relative">

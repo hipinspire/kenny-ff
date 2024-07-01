@@ -48,7 +48,7 @@ const imageVariantsCoolCowUpMob = {
     opacity: 0
   },
   animate: {
-    y: 545,
+    y: 500,
     x: 0,
     opacity: 1,
     transition: {

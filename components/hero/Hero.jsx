@@ -237,7 +237,7 @@ const Hero = () => {
 
   return (
     <section 
-      className="hero relative rounded-[39px] md:rounded-[59px] bg-[#36343C] pt-[70px] px-0 pb-[140px] lg:pt-[190px] lg:pb-[170px] m-[12px] md:mx-0"
+      className="hero relative rounded-[39px] md:rounded-[59px] bg-[#36343C] pt-[70px] px-0 pb-[199px] lg:pt-[190px] lg:pb-[170px] m-[12px] md:mx-0"
       ref={ref}  
     >
       {/* BG Images - Stripes */}
@@ -366,7 +366,7 @@ const Hero = () => {
             <div className="title-container relative z-30">
               <h1 className="text-[#AD89B1] text-[48px] md:text-[64px]">MoonTourus</h1>
               <p className="text-[#E7DBED] md:text-[18px] pb-6">During the presale, you’ll have an excellent opportunity to secure your share of the MNTR token. Get in early and join the meme revolution! </p>
-              <a className="btn inline-block text-[16px] lg:text-[18px] rounded-[30px] text-[#34313A] hover:text-[#ffffff] bg-[#E7DBED] hover:bg-[#AD89B1] transition-all pt-[18px] px-[54px] pb-[19px] lg:pt-[16px] lg:px-[54px] lg:pb-[18px] min-w-[184px]" href="#">Buy Now</a>
+              <a className="btn inline-block text-[16px] lg:text-[18px] rounded-[30px] text-[#34313A] hover:text-[#ffffff] bg-[#E7DBED] hover:bg-[#AD89B1] transition-all pt-[18px] px-[54px] pb-[19px] lg:pt-[16px] lg:px-[54px] lg:pb-[18px] min-w-[184px] hidden lg:inline-block" href="#">Buy Now</a>
             </div>
           </div>
           <div className="basis-full relative lg:basis-5/12 mt-10 lg:mt-[45px]">
